@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="Style/SoundStyle.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat" rel="stylesheet"/> 
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <nav>
+            <div id="menucontainer">
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="hylLogo" runat="server" CssClass="sitelogo" NavigateUrl="~/Home.aspx">
+                            <asp:Image ID="imgLogo" runat="server" Height="70px" Width="70px" ImageUrl="~/Files/Images/logo.png" />
+                        </asp:HyperLink>
+                    </li>
+                    <li><p class="sitetitle"><asp:HyperLink ID="hylTitle" runat="server" NavigateUrl="~/Home.aspx">The Sound</asp:HyperLink></p></li>
+                    <%--<li><a id="cartlink" href="Cart.aspx" runat="server">Cart: 0</a></li>--%>
+                    <%--<li><asp:HyperLink ID="hylCart" runat="server">Cart: 0</asp:HyperLink></li>--%>
+                    <li style="width:160px"><asp:HyperLink ID="hylCart" runat="server" NavigateUrl="~/Cart.aspx">Cart: 0</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="hylAdmin" runat="server" NavigateUrl="~/SecureAdmin/AdminHome.aspx">Admin</asp:HyperLink></li>
+                    <li class="dropdown">
+                        <asp:HyperLink ID="hylMyAccount" runat="server" NavigateUrl="~/Secure/MyAccount.aspx">My Account</asp:HyperLink>
+                        <ul class="dropdown-menu" visible="true" runat="server">
+                            <li><asp:HyperLink ID="hylRegister" runat="server" NavigateUrl="~/Register.aspx">Register</asp:HyperLink></li>
+                            <li><asp:HyperLink ID="hylSignIn" runat="server" NavigateUrl="~/SignIn.aspx">Sign In</asp:HyperLink></li>
+                            <li><asp:HyperLink ID="hylSignOut" runat="server" NavigateUrl="~/SignOut.aspx" Visible="false">Sign Out</asp:HyperLink></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <asp:HyperLink ID="hylAlbums" runat="server" NavigateUrl="~/Albums.aspx">Albums</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="hylArtists" runat="server" NavigateUrl="~/Artists.aspx">Artists</asp:HyperLink></li>
+                </ul>
+            </div>
+        </nav>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" ClientIDMode="Static">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

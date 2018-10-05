@@ -1,0 +1,646 @@
+﻿html {
+    /*background-color:#ffffff;*/
+    height: 100%; 
+    width: 100%;
+    margin: 0px 0px;
+}
+
+body{
+    /*background-color:#ffffff;*/
+    height: 100%; 
+    width: 100%;
+    margin: 0px 0px;
+}
+
+.whitebody{
+    background-color:#ffffff;
+    min-height: 100vh; 
+    min-width: 100vh;
+    margin: 0px 0px;
+}
+
+.blackbody{
+    background-color:#000000;
+    min-height: 100vh; 
+    min-width: 100vh;
+    margin: 0px 0px;
+}
+
+#topbar{
+    background-color: #000000;
+    border: 0px none;
+    min-height: 80px;
+}
+
+nav {
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container{
+    width:1100px;
+    min-height:80px;
+    margin:0 auto;
+}
+
+#menucontainer{
+    width:1300px;
+    min-height:80px;
+    margin:0 auto;
+}
+
+.homecontainer{
+    width:1300px;
+    min-height:80px;
+    margin:0 auto;
+}
+
+nav {
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    text-align:center;
+}
+
+nav ul li a {
+    color: white;
+    font-family: 'Montserrat', Arial, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    line-height: 3em;
+    padding: 1em 3em;
+    text-decoration: none;
+    
+}
+
+nav ul li a.logo {
+    background-color: green;
+}
+
+nav ul li a:hover {
+    background-color: deepskyblue;
+}
+
+nav ul li img {
+    margin: 0;
+    padding-top: 5px;
+}
+
+nav ul li {
+    float: right;
+}
+
+nav ul li:first-child {
+    float: left;
+}
+
+nav ul > li:nth-child(2) {
+    float: left;
+    color: white;
+    font-family: 'Montserrat', Arial, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sitelogo{
+    margin: 0;
+    padding: 0;
+    line-height:0em;
+}
+
+.sitelogo:hover{
+    background-color:black;
+}
+
+.sitetitle{
+    font-size:x-large;
+    background-color:black;
+}
+
+.sitetitle a{
+    line-height: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.sitetitle a:hover{
+    background-color:black;
+}
+
+.dropdown{
+    display: block;
+    z-index: 1;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    color: #ffffff;
+    background-color: #000000;
+    width:inherit;
+    font-size:medium;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    list-style: none;
+}
+
+.dropmenu-menu > li{
+    float: none;
+}
+
+.dropdown-menu a{
+    width:100px;
+    line-height: 0em;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+#randomalbumart{
+    margin-right: 5px;
+}
+
+#randomsong{
+    margin: 0px 0px;
+}
+
+#randomartist{
+    margin: 0px 0px;
+}
+
+#randomdetails{
+    margin-left: 5px;
+}
+
+#randomplayer{
+    width: 500px;
+    height: 30px;
+}
+
+#albumdisplay{
+    margin: 0 auto;
+    font-family:'Montserrat', sans-serif;
+    line-height: 3em;
+}
+
+#albumtop{
+    font-family:'Karla', sans-serif;
+    margin:0 auto;
+    padding-top:5px;
+    text-align:center;
+}
+
+#albumtop > img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#albumtop > p{
+    font-weight:bold;
+    font-size:xx-large;
+    color:#ffffff;
+}
+
+#albumtop a{
+    color: #ffffff;
+}
+
+#artistdisplay{
+    margin: 0 auto;
+    font-family:'Montserrat', sans-serif;
+}
+
+#artisttop{
+    font-family:'Karla', sans-serif;
+    height:300px;
+    margin:0 auto;
+    padding-top:5px;
+}
+
+#artisttop > img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:50%;
+    border-color:#ffffff;
+    border: 3px solid white;
+}
+#artisttop > p{
+    font-weight:bold;
+    font-size:xx-large;
+    color:#ffffff;
+    text-align:center;
+}
+
+#artistmid{
+    margin:0 auto;
+    padding: 5px 200px 5px 200px;
+    background-color:#000000;
+    color:#ffffff;
+    font-size:medium;
+    text-align:center;
+}
+
+.album{
+    display: block;
+    float: left;
+}
+
+.artwork{
+    border: 0px none;
+    display: block;
+}
+
+.wrapalbums{
+    width: 100%;
+    max-width: 1358px;
+    display: block;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+
+.wrapalbums a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#newalbums{
+    margin: 0 auto;
+}
+
+#newalbums a{
+    color: #000000;
+}
+
+#popular{
+    margin: 0 auto;
+}
+
+#popular a{
+    color: #000000;
+}
+
+.item{
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border-bottom:1px solid #ffffff;
+}
+
+.item img{
+    min-height: 200px;
+    min-width: 200px;
+}
+
+.titlewrapper{
+    font-family:Arial, sans-serif;
+    font-weight:bold;
+    text-align:left;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.titlewrapper a{
+    /*color:#ffffff;*/
+    text-decoration:none;
+}
+
+.titlewrapper a:hover{
+    text-decoration:underline;
+}
+
+audio{
+    width:1000px;
+}
+#lblAlbumTitle{
+    font-family:'Karla', sans-serif;
+}
+
+.displaybox{
+    padding:5px 0 5px 0;
+    background-color:gainsboro;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+#songlist {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2em;
+}
+
+.failure{
+    text-align:center;
+    color:#ffffff;
+}
+
+#welcome{
+    height:250px;
+    background-image:linear-gradient(to right, #00c9ff, #92fe9d);
+    font-family:'Karla', sans-serif;
+}
+
+.headline{
+    margin-top:0px;
+    padding-top:10px;
+    font-size:3em;
+    font-weight:bolder;
+    font-family:'Karla', sans-serif;
+}
+
+.centretext{
+    text-align:center;
+}
+
+.whiteheadline{
+    color:#ffffff;
+}
+
+.blackheadline{
+    color:#000000;
+}
+
+.thankyou{
+    padding:5px;
+}
+
+.hometitles{
+    font-size:2em;
+    font-family:'Karla', sans-serif;
+}
+
+.roundbutton{
+    font-size: 25px;
+    /*font-family:'Karla', sans-serif;*/
+    font-family:'Montserrat', sans-serif;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 0px 10px;
+}
+
+.randombutton{
+    background-color: #26a0da;
+}
+
+.buybutton{
+    background-color:#1db954;
+}
+
+.redbutton{
+    background-color:red;
+    margin: 5px 0px;
+}
+
+.bluebutton{
+    background-color:dodgerblue;
+    margin: 5px 0px;
+}
+
+.disabledbutton{
+    font-size: 25px;
+    /*font-family:'Karla', sans-serif;*/
+    font-family:'Montserrat', sans-serif;
+    color: #ffffff;
+    background-color: #808080;
+    border-radius: 15px;
+    padding: 0px 10px;
+}
+
+.table
+{
+	width:100%;
+	clear:both;
+   	display:table;
+    background-color:gainsboro;
+    font-family:'Montserrat', sans-serif;
+}
+
+.table-row
+{
+	display:table-row;
+}
+
+.table-cell
+{
+	text-align:center;
+	width:25%;
+    height:100px;
+   	display:table-cell;
+   	border-style: none;
+}
+
+.table-cell img{
+    width: 100px;
+    height: 100px;
+}
+
+.acell{
+    text-align:center;
+	width:50%;
+    height:100px;
+   	display:table-cell;
+   	border-style: none;
+    font-size:xx-large;
+}
+
+.acell img{
+    width:300px;
+    height:300px;
+}
+
+.acell a{
+    color: #000000;
+}
+
+.albumtagline{
+    font-size:medium;
+    color:#000000;
+}
+
+.cost{
+    margin-top: 10px;
+}
+
+#lblCost{
+    font-size:xx-large;
+    margin: 10px 5px;
+}
+
+.inputboxes{
+    width: 260px;
+    height:25px;
+    font-size:medium;
+}
+
+.validators{
+    margin-bottom:10px;
+    color:crimson;
+    font-family:Montserrat, sans-serif;
+}
+
+.status{
+    font-family:Montserrat, sans-serif;
+}
+
+.active a {
+  color: deepskyblue !important;
+  text-decoration: none;
+  font-size: x-large;
+}
+
+#streambox{
+    margin: 0px 10px;
+}
+
+#streamaudio{
+    text-align: center;
+}
+
+#playlist{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2em;
+}
+
+#playlist li a{
+    color: #000000;
+    padding: 5px;
+    display: block;
+}
+
+#streamimage{
+    float:left;
+}
+
+#streamimage img{
+    width:200px;
+    height:200px;
+}
+
+#streamdetails{
+    float:left;
+    margin-left: 10px;
+    font-family:'Montserrat', sans-serif;
+    color: white;
+}
+
+#nowstreaming{
+    font-size:medium;
+}
+
+.streamalbum{
+    font-size:xx-large;
+}
+
+.streamartist{
+    font-size:large;
+}
+
+.streambox{
+    clear:both;
+}
+
+.adminoption{
+    font-family:'Montserrat', sans-serif;
+    font-size:xx-large;
+}
+
+.exclusivetop{
+    background-image:url('../Files/Exclusive/exclusivebanner.jpg');
+    width:100%;
+    height: 350px;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.exclusivetop::before{
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, transparent, #000000 90%);
+    height: 100%;
+    width: 100%;
+    content: '';
+}
+
+.exclusiveheadline{
+    font-family:'Karla', sans-serif;
+    font-size:40px;
+    width: 100%;
+    text-align:center;
+}
+
+.exclusiveartist{
+    color: white;
+    font-family:'Montserrat', sans-serif;
+    font-size: large;
+    text-align:center;
+}
+
+.exclusiveartist img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:50%;
+    border-color:#ffffff;
+    border: 3px solid white;
+}
+
+.exclusivedesc, .solve{
+    color:white;
+    font-family:'Montserrat', sans-serif;
+    text-align:center;
+    font-size:medium;
+}
+
+.puzzletable{
+    width:606px;
+    height:606px;
+	clear:both;
+   	display:table;
+    background-color:grey;
+    margin: 0 auto;
+}
+
+.puzzlecell{
+    text-align:center;
+	width:200px;
+    height:200px;
+    margin:6px 6px;
+   	display:table-cell;
+}
+
+.puzzlecell > img{
+    width:200px;
+    height:200px;
+}
+
+.tile{
+    width:200px;
+    height:200px;
+}
+
+#puzzle{
+    width:100%;
+    height:100%;
+    margin: 0 auto;
+}
+
+.whitetext{
+    color:white;
+    font-family:'Montserrat', sans-serif;
+}
+
+#hylEditAccount{
+    margin-right: 2em;
+}
